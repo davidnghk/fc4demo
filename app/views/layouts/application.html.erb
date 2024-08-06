@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <%= render 'shared/favicon' %>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body id="page-top">
+
+    <% if current_user %>
+      <input type="hidden" id="user_id" value="<%= current_user.id %>">
+    <% end %>
+
+    <div id="wrapper">
+      <%= render 'shared/sidebar' %>
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <%= render 'shared/topbar' %>
+
+          <%= render 'shared/notification' %>
+          <%#= render 'shared/notices' %>
+          <%#= custom_bootstrap_flash %>
+          <div class="container fliud">
+            <%= yield %>
+            <div id='remote_container'></div>
+          </div>
+        </div>
+        <%#= render 'shared/footer' %>
+      </div>
+    </div>
+
+    <%#= render 'layouts/sb_extras' %>
+  </body>
+
+</html>

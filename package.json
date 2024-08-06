@@ -1,0 +1,28 @@
+{
+  "name": "template",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fullcalendar/core": "^4.4.0",
+    "@fullcalendar/daygrid": "^4.4.0",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "^4.2.0",
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.9.3",
+    "chartkick": "^3.2.0",
+    "daterangepicker": "^3.0.5",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "noty": "^3.2.0-beta",
+    "popper.js": "^1.16.0",
+    "toastr": "^2.1.4",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.9.0"
+  }
+}

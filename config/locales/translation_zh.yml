@@ -1,0 +1,142 @@
+zh:
+  activerecord:
+    models:
+      active_storage/attachment: 存儲/附件  #g
+      active_storage/blob: 存儲  #g
+      member: 會員  #g
+      team: 團隊  #g
+      user: 用户  #g
+      ticket: 通知單
+      master: 數據表
+      assignment: 工作
+      assignment_item: 工作項目
+      work: 工作類別
+      work_item: 工作項目
+
+    enums:
+        work:
+            workflows:
+                record: 記錄
+                simple: 簡單 #g
+                internal: 內部 #g
+                outsource: 外判 #g
+
+    attributes:
+      active_storage/attachment:
+        blob: 圖像  #g
+        name: 名稱  #g
+        record: :記錄  #g
+        record_type: 记录类型  #g
+
+      active_storage/blob:
+        attachments: 附件  #g
+        byte_size: 字节大小  #g
+        checksum: 校验和  #g
+        content_type: 内容类型  #g
+        filename: 文件名  #g
+        key: 键  #g
+        metadata: 元数据  #g
+        preview_image_attachment: :附件 #g
+        preview_image_blob: 圖像  #g
+
+      assignment:
+        name: 工作標題  #g
+        work: 工作類型
+        location: 位置類別
+        start_datetime: 開始日期
+        due_datetime: 目標日期
+        end_datetime: 完工日期
+        status: 狀態
+        aasm_state: 狀態
+        ancestry: 祖先記錄
+        comments: 註釋
+        ref_no: 參考編號
+        operation_team: 運營部門
+        address: 地址
+        user_ref: 用戶參考
+        date_range: 日期範圍
+        color: 顏色
+
+      assignment_item:
+        rating: 評級
+        work_item: 工作項目
+        remarks: 備註
+        serial_number: 序列號
+
+      master:
+        code: 縮寫  #g
+        local_name: 本地名稱  #g
+        name: 名稱  #g
+        icon: 圖標
+        setting1: 設置
+        param1: 參數
+
+      member:
+        role: 角色  #g
+        team: 團隊  #g
+        user: 用户  #g
+
+      ticket:
+        read_at: 閱讀日期
+        no: 編號
+        user: 用户  #g
+        actor: 行動人員  #g
+        message: 信息  #g
+        notifiable_id: 可通知  #g
+        notifiable_type: 法定類型  #g
+
+      team:
+        code: 縮寫  #g
+        local_name: 本地名稱  #g
+        members: 會員  #g
+        name: 名稱  #g
+        users: 用户們  #g
+
+      user:
+        confirmation_sent_at: 確認已發送至  #g
+        confirmation_token: 確認令牌  #g
+        confirmed_at: 确认于  #g
+        current_password: 當前密碼
+        current_sign_in_at: 当前登录于  #g
+        current_sign_in_ip: 当前登录ip  #g
+        email: 電子郵件 #g
+        encrypted_password: 加密密碼  #g
+        failed_attempts: 尝试失败  #g
+        invitation_accepted_at: 邀请已在接受  #g
+        invitation_created_at: 邀请创建于  #g
+        invitation_limit: 邀请限制  #g
+        invitation_sent_at: 邀请发送至  #g
+        invitation_token: 邀请令牌  #g
+        invited_by: :activerecord.models.invited_by  #g
+        invited_by_type: 按类型邀请  #g
+        last_sign_in_at: 上次登录时间：  #g
+        last_sign_in_ip: 上次登录ip  #g
+        locked_at: 锁定在  #g
+        members: 會員  #g
+        name: 名稱
+        password: 密碼
+        password_confirmation: 確認密碼
+        remember_created_at: 记得创建于  #g
+        reset_password_sent_at: 重置密碼发送到  #g
+        reset_password_token: 重置密碼令牌  #g
+        role: 角色  #g
+        teams: 队伍  #g
+        unconfirmed_email: 未确认的电子邮件  #g
+        unlock_token: 解锁令牌  #g
+
+      work:
+        code: 縮寫  #g
+        local_name: 本地名稱  #g
+        name: 名稱  #g
+        icon: 圖標 #g
+        workflow: 工作流程 #g
+        workflows: 
+            record: 記錄
+            simple: 簡單 #g
+            internal: 內部 #g
+            outsource: 外判 #g
+
+      work_item:
+        code: 縮寫  #g
+        local_name: 本地名稱  #g
+        name: 名稱  #g

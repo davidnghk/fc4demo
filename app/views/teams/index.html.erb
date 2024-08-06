@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th><%= t('team') %></th>
+      <th><%= t('name') %></th>
+      <th><%= t('local_name') %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr data-link="<%= team_path(team) %>">
+        <td><%= team.code %></td>
+        <td><%= team.name %></td>
+        <td><%= team.local_name %></td>
+      </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_team_path, data: { turbolinks: false } do %>
+  <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+<% end %>
